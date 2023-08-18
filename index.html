@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>iStore</title>
+</head>
+
+<body class="container mx-auto" style="font-family: system-ui, -apple-system;">
+    <h1 class="font-bold text-6xl text-center bg-slate-200 py-4">Welcome To Apple Store.</h1>
+
+    <div class="grid grid-cols-4 mt-9">
+        <div class="">
+            <figure><img src="/images/1533-48820.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Iphone 13 pro Max</h2>
+                <p>Get the iphone 13 pro max on best price in town</p>
+                <h1 class="card-title text-red-700">Price: $ 990 </h1>
+                <div class="card-actions justify-end">
+            <button onclick="clickEventHandle(this)" id="addToCart" class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <figure><img src="/images/iPhone-14-Blue-7810.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Iphone 14 pro Max</h2>
+                <p>Get the iphone 14 pro max on best price in town</p>
+                <h1 class="card-title text-red-700">Price: $ 1190 </h1>
+                <div class="card-actions justify-end">
+                    <button  onclick="clickEventHandle(this)" class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <figure><img class="" src="/images/apple-iphone-15-pro-max-1.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">Iphone 15 pro Max</h2>
+                <p>Get the iphone 13 pro max on best price in town</p>
+                <h1 class="card-title text-red-700">Price: $ 1290</h1>
+                <div class="card-actions justify-end">
+                    <button  onclick="clickEventHandle(this)" class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h1 class="font-extrabold text-3xl text-red-700">CART</h1>
+            <code class="text-red-500 ">get $500 discount on buy 4 products</code>
+                    <div id="product-names-container">
+
+                    </div>
+            <p class="my-3 font-semibold">Total : $ <span id="total">00</span> </p> 
+            <p class="my-3 font-semibold">Discount : $ <span id="discount">00</span></p>
+            <p class="my-3 font-extrabold">Grand Total : $ <span id="grand-total">00</span> </p>
+            <button class="btn">Check Out</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
